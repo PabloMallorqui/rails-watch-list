@@ -1,0 +1,9 @@
+<h2><%= @list.name %></h2>
+
+<h2><% @list.movies.each do |movie| %></h2>
+
+<% end %>
+
+<%= link_to "Create a bookmark",  new_list_bookmark_path(params[:id]) %>
+<br>
+<%= link_to "Go back to the lists", lists_path %>
